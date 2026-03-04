@@ -1,4 +1,4 @@
-# Edge AI FPGA Keyword Spotter
+# KwikWord - Edge AI FPGA Keyword Spotter
 
 A minimal end‑to‑end pipeline for **keyword spotting** on an FPGA using the Google Speech Commands v2 dataset, TensorFlow/Keras, and [hls4ml](https://fastmachinelearning.org/hls4ml/).
 
