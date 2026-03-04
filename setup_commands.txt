@@ -1,0 +1,7 @@
+mkdir python
+mkdir hls4ml_project
+mkdir docs
+python -m venv venv
+# Note: To use the virtual environment, you typically activate it:
+# .\venv\Scripts\activate
+# pip install -r python\requirements.txt

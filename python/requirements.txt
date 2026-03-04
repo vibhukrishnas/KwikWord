@@ -1,0 +1,7 @@
+tensorflow
+hls4ml
+numpy
+matplotlib
+tensorflow-datasets
+pydub
+audioop-lts
