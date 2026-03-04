@@ -1,0 +1,112 @@
+Backend: Vivado
+ClockPeriod: 10
+ClockUncertainty: 12.5%
+HLSConfig:
+  LayerName:
+    conv2d:
+      Precision:
+        bias: ap_fixed<8,3>
+        result: ap_fixed<16,6>
+        weight: ap_fixed<8,3>
+      Trace: false
+    conv2d_1:
+      Precision:
+        bias: ap_fixed<8,3>
+        result: ap_fixed<16,6>
+        weight: ap_fixed<8,3>
+      Trace: false
+    conv2d_2:
+      Precision:
+        bias: ap_fixed<8,3>
+        result: ap_fixed<16,6>
+        weight: ap_fixed<8,3>
+      Trace: false
+    dense:
+      Precision:
+        bias: ap_fixed<8,3>
+        result: ap_fixed<16,6>
+        weight: ap_fixed<8,3>
+      Trace: false
+    dense_1:
+      Precision:
+        bias: ap_fixed<8,3>
+        result: ap_fixed<16,6>
+        weight: ap_fixed<8,3>
+      Trace: false
+    dense_1_softmax:
+      Precision:
+        result: auto
+      Trace: false
+    dropout:
+      Precision:
+        result: auto
+      Trace: false
+    flatten:
+      Precision:
+        result: auto
+      Trace: false
+    input_layer:
+      Precision:
+        result: auto
+      Trace: false
+    max_pooling2d:
+      Precision:
+        result: auto
+      Trace: false
+    max_pooling2d_1:
+      Precision:
+        result: auto
+      Trace: false
+    max_pooling2d_2:
+      Precision:
+        result: auto
+      Trace: false
+    re_lu:
+      Precision:
+        param: auto
+        result: auto
+      Trace: false
+    re_lu_1:
+      Precision:
+        param: auto
+        result: auto
+      Trace: false
+    re_lu_2:
+      Precision:
+        param: auto
+        result: auto
+      Trace: false
+    re_lu_3:
+      Precision:
+        param: auto
+        result: auto
+      Trace: false
+  Model:
+    BitExact: null
+    BramFactor: 1000000000
+    Precision: ap_fixed<8,3>
+    ReuseFactor: 1
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_stream
+InputData: null
+InputShapes:
+  input_layer:
+  - 124
+  - 40
+  - 1
+KerasModel: !keras_model 'D:\Projects\BITS HYD Hackathon\hls4ml_project\keyword_cnn_hls/keras_model.keras'
+OutputDir: D:\Projects\BITS HYD Hackathon\hls4ml_project\keyword_cnn_hls
+OutputPredictions: null
+OutputShapes:
+  layer16_out:
+  - 6
+Part: xc7z020clg400-1
+ProjectName: myproject
+Stamp: 63e1efe2
+Version: 1.0.0
+WriterConfig:
+  Namespace: null
+  TBOutputStream: both
+  WriteTar: false
+  WriteWeightsTxt: true

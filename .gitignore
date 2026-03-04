@@ -14,8 +14,7 @@ python/train_output.txt
 python/eval_summary.txt
 python/inspect_output.txt
 
-# hls4ml generated project (large, regenerable)
-hls4ml_project/
+# hls4ml generated project — kept in repo for hackathon visibility
 
 # OS / IDE
 .DS_Store
